@@ -16,6 +16,10 @@ This kit helps evaluate whether a business is ready to be discovered, understood
 - `skills/aeo-geo-audit/` - Codex-compatible skill pack
 - `.claude/skills/aeo-geo-audit/` - Claude-compatible bridge skill
 - `manifests/agent-roster.yaml` - coordinator and sub-agent ownership map
+- `agent-pack/` - portable multi-agent workflow notes
+- `agents/` - standalone agent prompt files
+- `references/` - repo-level supporting references
+- `assets/` - repository preview and visual assets
 - `examples/audit-request.md` - copy-ready audit prompts
 - `INSTALL.md` - setup notes for Codex and Claude
 - Sub-agent prompts for crawl, schema, content, local Maps/NAP, reviews, links, and LLM visibility
