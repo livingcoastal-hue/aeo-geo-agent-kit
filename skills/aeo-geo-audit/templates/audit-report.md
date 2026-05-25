@@ -11,7 +11,7 @@ Audit date: `[date]`
 
 ## Overall Readiness
 
-Overall score: `[score]/55`  
+Overall score: `[score]/45`  
 Readiness level: `[level]`
 
 | Category | Score | Status | Key reason |
