@@ -4,7 +4,7 @@ Audit trust, review strength, sentiment, and reputation signals that answer engi
 
 Check:
 
-- Review sources: Google, Yelp, BBB, Trustpilot, industry-specific platforms, marketplace profiles, app stores where relevant.
+- Review sources: Google, Yelp, BBB, Facebook, Trustpilot, industry-specific platforms, marketplace profiles, app stores where relevant.
 - Rating, count, recency, velocity, review distribution, and competitor comparison.
 - Sentiment themes: service quality, speed, pricing, communication, outcomes, staff, negative patterns.
 - Owner responses: speed, specificity, tone, resolution, keyword/entity usefulness without stuffing.
