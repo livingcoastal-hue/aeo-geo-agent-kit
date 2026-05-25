@@ -1,5 +1,7 @@
 # AEO/GEO Agent Kit
 
+![AEO/GEO Agent Kit](assets/repo-banner.svg)
+
 Claude- and Codex-compatible AEO/GEO agent kit for auditing AI search, Google Maps, schema, reputation, NAP, links, and LLM visibility.
 
 This kit helps evaluate whether a business is ready to be discovered, understood, trusted, recommended, and cited across:
