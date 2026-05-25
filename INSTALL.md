@@ -39,6 +39,18 @@ Use the aeo-geo-audit skill to audit [company name] at [URL].
 - Target customers
 - Known competitors
 
+## Optional Dashboard Build
+
+This repo has a lightweight static dashboard builder that uses only built-in Node.js modules.
+
+```bash
+npm install
+npm run build:dashboard
+npm audit
+```
+
+There are no external npm dependencies by default, so `npm audit` should report zero vulnerabilities unless dependencies are added later.
+
 ## Notes
 
 Some audit surfaces require live web access or account exports. If a data source is unavailable, the skill should mark it as not checked rather than guessing.
