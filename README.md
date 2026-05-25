@@ -51,6 +51,16 @@ Recommended inputs:
 - Target customers
 - Competitors, if known
 
+## Optional Dashboard
+
+The repo includes a static dashboard builder with no external npm dependencies:
+
+```bash
+npm install
+npm run build:dashboard
+npm audit
+```
+
 ## Audit Coverage
 
 The audit workflow covers:
