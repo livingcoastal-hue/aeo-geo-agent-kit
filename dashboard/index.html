@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codex Skill Monitor</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyeline">Codex operations</p>
+        <h1>Skill Monitor</h1>
+      </div>
+      <div class="status-strip" aria-label="System status">
+        <span class="status-dot"></span>
+        <span id="lastUpdated">Loading inventory</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="metrics" aria-label="Skill inventory summary">
+        <article class="metric">
+          <span class="metric-label">Installed skills</span>
+          <strong id="skillCount">0</strong>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Skill sources</span>
+          <strong id="sourceCount">0</strong>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Categories</span>
+          <strong id="categoryCount">0</strong>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Project agents</span>
+          <strong id="agentCount">0</strong>
+        </article>
+      </section>
+
+      <section class="control-row" aria-label="Dashboard controls">
+        <label class="search-box">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Find a skill, agent, or capability">
+        </label>
+        <label class="select-box">
+          <span>Category</span>
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+          </select>
+        </label>
+        <label class="select-box">
+          <span>Source</span>
+          <select id="sourceFilter">
+            <option value="all">All sources</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="priority-grid" aria-label="Priority local growth skills">
+        <div class="section-heading">
+          <h2>Growth Stack</h2>
+          <p>Skills most relevant to local business visibility, GBP, AEO, GEO, audits, and client delivery.</p>
+        </div>
+        <div id="prioritySkills" class="priority-list"></div>
+      </section>
+
+      <section class="split-view">
+        <div class="panel">
+          <div class="section-heading">
+            <h2>Skill Library</h2>
+            <p id="resultCount">Showing all skills</p>
+          </div>
+          <div id="skillList" class="skill-list"></div>
+        </div>
+
+        <aside class="panel detail-panel">
+          <div class="section-heading">
+            <h2>Selected Skill</h2>
+            <p id="selectedHint">Choose a skill to inspect its purpose and location.</p>
+          </div>
+          <div id="skillDetail" class="skill-detail empty-state">
+            No skill selected.
+          </div>
+        </aside>
+      </section>
+
+      <section class="panel agents-panel">
+        <div class="section-heading">
+          <h2>AEO/GEO Agent Roster</h2>
+          <p>Project-level agents in this workspace and the work each one owns.</p>
+        </div>
+        <div id="agentRoster" class="agent-grid"></div>
+      </section>
+    </main>
+
+    <script src="./skills-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
