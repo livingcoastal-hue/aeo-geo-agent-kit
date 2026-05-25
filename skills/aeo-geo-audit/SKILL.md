@@ -20,6 +20,124 @@ Ask for only missing essentials:
 
 If the user only gives a URL, infer the company name from the site and say it is inferred.
 
+## Modes
+
+If the user names a mode, follow that mode. If no mode is named, default to **Rapid Audit** when inputs are incomplete and **Full Audit** when company name and URL are present.
+
+| Mode | Use when | Output |
+|---|---|---|
+| Full Audit | User wants a complete client-ready audit | Full scorecard, evidence, findings, 30/60/90 roadmap, agent tasks |
+| Rapid Audit | User wants a fast read or provides minimal inputs | Snapshot scorecard, top strengths, top risks, top 10 fixes |
+| Local Maps Audit | User cares about Google Maps, GBP, local SEO, citations, NAP | NAP record, Maps/GBP findings, citation gaps, local page recommendations |
+| Schema Entity Audit | User asks about schema, entity, sameAs, structured data | Schema inventory, validation risks, entity consistency, markup recommendations |
+| LLM Visibility Test | User asks whether the company appears in AI answers | Prompt table, sampled results or test plan, competitor mentions, citation opportunities |
+| Competitor Comparison | User provides competitors | Side-by-side readiness comparison and gap plan |
+| Content Gap Audit | User wants pages/topics/questions to build | Missing answer pages, FAQ blocks, proof assets, comparison pages |
+| Reputation Review Audit | User cares about reviews and trust | Review source summary, sentiment, response quality, review growth plan |
+| Remediation Roadmap | User has findings and wants implementation | 30/60/90-day plan with owners, priorities, effort, acceptance criteria |
+| Client Report | User wants business-owner-friendly language | Plain-English report with jargon translated into business impact |
+| Agent Task Breakdown | User wants work split across agents | Sub-agent task list with acceptance criteria |
+
+When a mode is chosen, keep the report focused on that mode instead of forcing every section from the full audit.
+
+## Prompt Menu
+
+Use or adapt these prompts when a user asks what to enter. Also load `templates/prompt-menu.md` when the user wants copy-ready prompts.
+
+### Full Audit
+
+```text
+Use $aeo-geo-audit in Full Audit mode.
+
+Company:
+Website:
+Primary location:
+Service area:
+Target customers:
+Top services:
+Competitors:
+Output format: client-ready report
+```
+
+### Rapid Audit
+
+```text
+Use $aeo-geo-audit in Rapid Audit mode.
+
+Company:
+Website:
+Location:
+Focus: AEO, GEO, Google Maps, reviews, schema, and LLM visibility
+Output: scorecard + top 10 fixes
+```
+
+### Local Maps Audit
+
+```text
+Use $aeo-geo-audit in Local Maps Audit mode.
+
+Company:
+Website:
+Primary address:
+Phone:
+Google Business Profile URL:
+Service area:
+Competitors:
+```
+
+### Schema Entity Audit
+
+```text
+Use $aeo-geo-audit in Schema Entity Audit mode.
+
+Company:
+Website:
+Known profiles:
+- Google Business Profile:
+- LinkedIn:
+- Facebook:
+- Yelp:
+- BBB:
+```
+
+### LLM Visibility Test
+
+```text
+Use $aeo-geo-audit in LLM Visibility Test mode.
+
+Company:
+Website:
+Market:
+Services:
+Competitors:
+Platforms to test: ChatGPT, Gemini, Claude, Perplexity, Google AI
+```
+
+### Competitor Comparison
+
+```text
+Use $aeo-geo-audit in Competitor Comparison mode.
+
+Company:
+Website:
+Location:
+Competitors:
+1.
+2.
+3.
+```
+
+### Remediation Roadmap
+
+```text
+Use $aeo-geo-audit in Remediation Roadmap mode.
+
+Company:
+Website:
+Audit findings:
+[paste findings]
+```
+
 ## Operating Rules
 
 - Treat SEO, AEO, GEO, local search, and Maps as overlapping systems. Do not claim old SEO is dead; evaluate which assets are still useful and which need answer-engine adaptation.
@@ -147,3 +265,4 @@ The final report must include:
 - `references/prompt-library.md` - reusable LLM and AI-search test prompts
 - `references/scoring-rubric.md` - scoring rules and severity definitions
 - `references/tools-and-data.md` - suggested data sources, crawlers, APIs, and manual checks
+- `templates/prompt-menu.md` - copy-ready user prompts by mode
