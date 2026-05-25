@@ -1,0 +1,7 @@
+interface:
+  display_name: "AEO/GEO Audit"
+  short_description: "Audit AI search, maps, and entity readiness"
+  brand_color: "#0F766E"
+  default_prompt: "Use $aeo-geo-audit to audit this company for AI search, Maps, schema, reviews, NAP, links, and LLM visibility."
+policy:
+  allow_implicit_invocation: true
