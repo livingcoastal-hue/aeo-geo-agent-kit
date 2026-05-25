@@ -144,5 +144,6 @@ The final report must include:
 ## Optional References
 
 - `references/audit-framework.md` - deeper checklist for each audit surface
+- `references/prompt-library.md` - reusable LLM and AI-search test prompts
 - `references/scoring-rubric.md` - scoring rules and severity definitions
 - `references/tools-and-data.md` - suggested data sources, crawlers, APIs, and manual checks
