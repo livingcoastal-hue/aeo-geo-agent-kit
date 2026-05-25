@@ -1,7 +1,7 @@
 {
   "name": "aeo-geo-agent-kit",
   "version": "0.1.0",
-  "description": "Claude- and Codex-compatible skills, agents, templates, and workflows for AEO/GEO and AI search readiness audits.",
+  "description": "Claude- and Codex-compatible AEO/GEO agent kit for auditing AI search, Google Maps, schema, reputation, NAP, links, and LLM visibility.",
   "type": "module",
   "private": false,
   "license": "MIT",
