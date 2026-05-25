@@ -1,0 +1,23 @@
+{
+  "name": "aeo-geo-agent-kit",
+  "version": "0.1.0",
+  "description": "Claude- and Codex-compatible skills, agents, templates, and workflows for AEO/GEO and AI search readiness audits.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "build:dashboard": "node dashboard/build-dashboard.mjs",
+    "audit": "npm audit"
+  },
+  "keywords": [
+    "aeo",
+    "geo",
+    "ai-search",
+    "codex",
+    "claude",
+    "local-seo",
+    "schema",
+    "llm-visibility"
+  ],
+  "devDependencies": {}
+}
