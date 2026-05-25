@@ -67,8 +67,8 @@ Conversion trust:
 
 ## Overall Readiness
 
-- 0-20: Not AI-search ready
-- 21-32: Weak foundation
-- 33-40: Usable foundation, significant upside
-- 41-48: Competitive
-- 49-55: Strong AI/local/entity presence
+- 0-16: Not AI-search ready
+- 17-26: Weak foundation
+- 27-34: Usable foundation, significant upside
+- 35-40: Competitive
+- 41-45: Strong AI/local/entity presence
