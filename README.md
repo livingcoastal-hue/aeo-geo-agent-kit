@@ -1,6 +1,6 @@
 # AEO/GEO Agent Kit
 
-Claude- and Codex-compatible skills, agents, templates, and workflows for auditing and improving AI search readiness.
+Claude- and Codex-compatible AEO/GEO agent kit for auditing AI search, Google Maps, schema, reputation, NAP, links, and LLM visibility.
 
 This kit helps evaluate whether a business is ready to be discovered, understood, trusted, recommended, and cited across:
 
